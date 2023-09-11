@@ -1,5 +1,8 @@
 /* eslint-disable react/jsx-max-depth */
 import { Link } from 'react-router-dom';
+import trybeTunes from '../../assets/trybe-tunes.png';
+import trybeWallet from '../../assets/trybe-wallet.png';
+import codeStore from '../../assets/online-store.png';
 import './projects.css';
 
 function Projects() {
@@ -11,7 +14,7 @@ function Projects() {
           <Link className="pinnedProjectLink" to="/projects/trybe-tunes">
             <img
               className="pinnedProjectImg"
-              src="src/assets/trybe-tunes.png"
+              src={ trybeTunes }
               alt="trybe tunes"
             />
           </Link>
@@ -36,7 +39,7 @@ function Projects() {
           <Link className="pinnedProjectLink" to="/projects/code-store">
             <img
               className="pinnedProjectImg"
-              src="src/assets/online-store.png"
+              src={ codeStore }
               alt="online store"
             />
           </Link>
@@ -61,7 +64,7 @@ function Projects() {
           <Link className="pinnedProjectLink" to="/projects/trybe-wallet">
             <img
               className="pinnedProjectImg"
-              src="src/assets/trybe-wallet.png"
+              src={ trybeWallet }
               alt="trybe wallet"
             />
           </Link>

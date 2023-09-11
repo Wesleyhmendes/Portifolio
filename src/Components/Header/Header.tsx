@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import homeIcon from '../../assets/home.svg';
 import './header.css';
 
 function Header() {
@@ -7,7 +8,7 @@ function Header() {
       <Link to="/">
         <img
           className="homeIcon"
-          src="src/assets/home.svg"
+          src={ homeIcon }
           alt="Página inicial"
         />
       </Link>

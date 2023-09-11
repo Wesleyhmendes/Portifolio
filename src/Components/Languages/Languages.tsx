@@ -1,4 +1,14 @@
 import './languages.css';
+import html from '../../assets/html.png';
+import css3 from '../../assets/css3.png';
+import Javascript from '../../assets/Javascript.png';
+import typescript from '../../assets/typescript.png';
+import react from '../../assets/react.png';
+import redux from '../../assets/redux.png';
+import Git from '../../assets/Git.png';
+import jest from '../../assets/jest.png';
+import linux from '../../assets/linux.png';
+import github from '../../assets/github.png';
 
 function Languages() {
   return (
@@ -8,52 +18,52 @@ function Languages() {
         <div className="languagesIconsCard">
           <img
             className="langIcon htmlIcon"
-            src="src/assets/html.png"
+            src={ html }
             alt="html"
           />
           <img
             className="langIcon cssIcon"
-            src="src/assets/css3.png"
+            src={ css3 }
             alt="css3"
           />
           <img
             className="langIcon jsIcon"
-            src="src/assets/Javascript.png"
+            src={ Javascript }
             alt="JavaScript"
           />
           <img
             className="langIcon tsIcon"
-            src="src/assets/typescript.png"
+            src={ typescript }
             alt="typeScript"
           />
           <img
             className="langIcon reactIcon"
-            src="src/assets/react.png"
+            src={ react }
             alt="react"
           />
           <img
-            className="langIcon reactIcon"
-            src="src/assets/redux.png"
+            className="langIcon reduxIcon"
+            src={ redux }
             alt="redux"
           />
           <img
             className="langIcon gitIcon"
-            src="src/assets/Git.png"
+            src={ Git }
             alt="Git"
           />
           <img
             className="langIcon jestIcon"
-            src="src/assets/jest.png"
+            src={ jest }
             alt="jest"
           />
           <img
             className="langIcon linuxIcon"
-            src="src/assets/linux.png"
+            src={ linux }
             alt="linux"
           />
           <img
             className="langIcon githubIcon"
-            src="src/assets/github.png"
+            src={ github }
             alt="github"
           />
         </div>
