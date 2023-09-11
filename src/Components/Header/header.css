@@ -1,0 +1,43 @@
+.headerMainSection {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  height: 65px;
+  padding-left: 35px;
+}
+
+.homeIcon {
+  cursor: pointer;
+  width: 30px;
+}
+.headerDiv {
+  align-items: center;
+  display: flex;
+  height: 65px;
+  margin-right: 60px;
+  padding-bottom: 22px;
+}
+
+.projectsLink,
+.linkedinLink,
+.contactLink {
+  color: #000;
+  text-align: right;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  margin-right: 33px;
+  margin-top: 27px;
+  line-height: normal;
+  transition: ease 0.2s;
+}
+
+.projectsLink:hover,
+.linkedinLink:hover,
+.contactLink:hover {
+  color: #087495;
+}
+
+.link {
+  text-decoration: none;
+}
