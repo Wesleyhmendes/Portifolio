@@ -41,10 +41,22 @@
   transition: ease 0.2s;
 }
 
+.projectImgCodeStore {
+  border-radius: 15px;
+  height: 500px;
+  margin-right: 50px;
+  transition: ease 0.2s;
+}
+
 .projectImgWallet {
   border-radius: 15px;
   transition: ease 0.2s;
   width: 980px;
+}
+
+.projectImgCodeStore:hover {
+  height: 550px;
+  width: 1080px;
 }
 
 .projectImgWallet:hover {
@@ -60,6 +72,20 @@
   height: 590px;
   margin-bottom: 70px;
   width: 1000px;
+  box-shadow: 50px 50px 65px #c7c7c7,
+    -50px -50px 65px #f9f9f9;
+}
+
+.imgDivCodeStore {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-left: 50px;
+  border-radius: 15px;
+  background: #cecdcd;
+  height: 540px;
+  margin-bottom: 70px;
+  width: 950px;
   box-shadow: 50px 50px 65px #c7c7c7,
     -50px -50px 65px #f9f9f9;
 }

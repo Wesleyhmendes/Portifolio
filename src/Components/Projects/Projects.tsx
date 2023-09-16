@@ -2,7 +2,7 @@
 import { Link } from 'react-router-dom';
 import trybeTunes from '../../assets/trybe-tunes.png';
 import trybeWallet from '../../assets/trybe-wallet.png';
-import codeStore from '../../assets/online-store.png';
+import codeStore from '../../assets/onlineStore-2.png';
 import './projects.css';
 
 function Projects() {
