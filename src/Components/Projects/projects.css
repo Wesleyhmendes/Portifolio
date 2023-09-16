@@ -27,8 +27,8 @@
 
 .pinnedProjectImg {
   border-radius: 6px;
-  height: calc(180px * 2);
-  width: calc(246px * 2);
+  height: 250px;
+  width: 400px;
 }
 
 .pinnedProjectTextDiv {

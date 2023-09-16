@@ -1,6 +1,8 @@
 /* eslint-disable react/jsx-max-depth */
 import Footer from '../Components/Footer/Footer';
 import Header from '../Components/Header/Header';
+import whatsapp from '../assets/svg/whatsapp.svg';
+import gmail from '../assets/svg/gmail.svg';
 import './contact.css';
 
 function Contact() {
@@ -21,7 +23,7 @@ function Contact() {
             >
               <img
                 className="contactPageImg"
-                src="src/assets/whatsapp.svg"
+                src={ whatsapp }
                 alt="whatsapp"
               />
               <p>Whatsapp</p>
@@ -36,7 +38,7 @@ function Contact() {
             >
               <img
                 className="contactPageImg"
-                src="src/assets/gmail.svg"
+                src={ gmail }
                 alt="email"
               />
               <p>Email</p>

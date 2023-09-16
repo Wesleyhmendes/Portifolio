@@ -1,15 +1,23 @@
 .headerMainSection {
   align-items: center;
+  background-color: white;
   display: flex;
   justify-content: space-between;
   height: 65px;
   padding-left: 35px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(117, 98, 117, 1);
+  -moz-box-shadow: 0px 3px 5px -1px rgba(117, 98, 117, 1);
+  box-shadow: 0px 0.5px 5px -1px rgba(117, 98, 117, 1);
 }
 
 .homeIcon {
   cursor: pointer;
   width: 30px;
 }
+
 .headerDiv {
   align-items: center;
   display: flex;
