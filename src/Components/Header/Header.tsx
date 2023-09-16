@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import homeIcon from '../../assets/home.svg';
+import homeIcon from '../../assets/svg/home.svg';
 import './header.css';
 
 function Header() {
@@ -13,13 +13,14 @@ function Header() {
         />
       </Link>
       <div className="headerDiv">
-        <a className="link" href="https://github.com/Wesleyhmendes">
+        <a className="link" target="blanket" href="https://github.com/Wesleyhmendes">
           <h2 className="projectsLink">Projetos</h2>
         </a>
         <Link className="link" to="/contact">
           <h2 className="contactLink">Contato</h2>
         </Link>
         <a
+          target="blanket"
           className="link"
           href="https://www.linkedin.com/in/wesley-mendes/"
         >

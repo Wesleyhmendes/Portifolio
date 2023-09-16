@@ -27,6 +27,7 @@ function Projects() {
               <p className="pinnedProjectLang">React</p>
               <p className="pinnedProjectLang">TypeScript</p>
               <p className="pinnedProjectLang">JavaScript</p>
+              <p className="pinnedProjectLang">Redux</p>
             </div>
             <p className="pinnedProjectDescription">
               Descrição do projeto: Amet minim mollit non deserunt ullamco est sit
@@ -52,6 +53,7 @@ function Projects() {
               <p className="pinnedProjectLang">React</p>
               <p className="pinnedProjectLang">TypeScript</p>
               <p className="pinnedProjectLang">JavaScript</p>
+              <p className="pinnedProjectLang">Redux</p>
             </div>
             <p className="pinnedProjectDescription">
               Descrição do projeto: Amet minim mollit non deserunt ullamco est sit
@@ -77,6 +79,7 @@ function Projects() {
               <p className="pinnedProjectLang">React</p>
               <p className="pinnedProjectLang">TypeScript</p>
               <p className="pinnedProjectLang">JavaScript</p>
+              <p className="pinnedProjectLang">Redux</p>
             </div>
             <p className="pinnedProjectDescription">
               Descrição do projeto: Amet minim mollit non deserunt ullamco est sit
