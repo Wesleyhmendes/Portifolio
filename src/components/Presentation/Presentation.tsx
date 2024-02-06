@@ -16,7 +16,7 @@ function Presentation() {
     <PresentationSection>
       <PresentationPictureDiv>
         <PresentationPicture
-          src="src/assets/presentation/foto-perfil-amarela.png"
+          src={ wesley }
           alt="Foto de perfil"
         />
       </PresentationPictureDiv>
