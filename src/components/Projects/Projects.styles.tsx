@@ -1,3 +1,4 @@
+/* eslint-disable max-lines */
 import styled from 'styled-components';
 
 export const ProjectSection = styled.section`
@@ -7,15 +8,15 @@ export const ProjectSection = styled.section`
   justify-content: center;
   padding-right: 1em;
 
-  @media (min-width: 800px) {
-  padding-right: 4em;
-  padding-left: 4em;
 
+  @media (min-width: 800px) {
+    margin: 0 auto;
+    width: 75%;
   }
 
   @media (min-width: 1200px) {
-    padding-right: 8em;
-    padding-left: 8em;
+    margin: 0 auto;
+    width: 75%;
   }
 `;
 
@@ -63,6 +64,19 @@ export const ProjectImg = styled.img`
   }
 `;
 
+export const ProjectImgDesktop = styled.img`
+  display: none;
+
+  @media (min-width: 800px) {
+  }
+
+  @media (min-width: 1368px) {
+    display: inline;
+    height: 350px;
+    margin-left: 15px;
+  }
+`;
+
 export const ProjectDescriptionDiv = styled.div`
   margin-left: 1.5em;
 
@@ -97,6 +111,7 @@ export const ProjectTagDiv = styled.div`
   display: flex;
   gap: 0.5em;
   margin-bottom: 0.5em;
+  flex-wrap: wrap;
 
   @media (min-width: 800px) {
     gap: 1.5em;
@@ -126,7 +141,7 @@ export const ProjectH4 = styled.h4`
 export const ProjectTagsReact = styled.button`
   border: none;
   border-radius: 7px;
-  background-color: #142850;
+  background-color: #5ed3f3;
   color: #FFFF;
   font-size: 15px;
   font-family: Poppins;
@@ -145,7 +160,83 @@ export const ProjectTagsReact = styled.button`
 export const ProjectTagsTs = styled.button`
   border: none;
   border-radius: 7px;
-  background-color: #4378E2;
+  background-color: #2f74c0;
+  color: #FFFF;
+  font-size: 15px;
+  font-family: Poppins;
+  font-weight: 500;
+  width: 120px;
+
+  @media (min-width: 800px) {
+    font-size: 18px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 140px;
+  }
+`;
+
+export const ProjectTagsNode = styled.button`
+  border: none;
+  border-radius: 7px;
+  background-color: #8BBF3D;
+  color: #FFFF;
+  font-size: 15px;
+  font-family: Poppins;
+  font-weight: 500;
+  width: 120px;
+
+  @media (min-width: 800px) {
+    font-size: 18px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 140px;
+  }
+`;
+
+export const ProjectTagsDocker = styled.button`
+  border: none;
+  border-radius: 7px;
+  background-color: #0997e5;
+  color: #FFFF;
+  font-size: 15px;
+  font-family: Poppins;
+  font-weight: 500;
+  width: 120px;
+
+  @media (min-width: 800px) {
+    font-size: 18px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 140px;
+  }
+`;
+
+export const ProjectTagsFront = styled.button`
+  border: none;
+  border-radius: 7px;
+  background-color: #FF3838;
+  color: #FFFF;
+  font-size: 15px;
+  font-family: Poppins;
+  font-weight: 500;
+  width: 120px;
+
+  @media (min-width: 800px) {
+    font-size: 18px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 140px;
+  }
+`;
+
+export const ProjectTagsBack = styled.button`
+  border: none;
+  border-radius: 7px;
+  background-color: #292929;
   color: #FFFF;
   font-size: 15px;
   font-family: Poppins;
@@ -176,4 +267,30 @@ export const ProjectP = styled.p`
 
 export const ProjectLink = styled.a`
   text-decoration: none;
+`;
+
+export const ProjectAccessBtn = styled.button`
+  background-color: #FF3838;
+  box-shadow: 0px 2.8px 7px 0.8px rgba(0,0,0,0.3);
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  font-weight: 700;
+  height: 40px;
+  margin-top: 1em;
+  text-align: center;
+  width: 150px;
+
+  &:hover {
+    background-color: #ff1313;
+    cursor: pointer;
+  }
+
+  @media (min-width: 800px) {
+   
+  }
+
+  @media (min-width: 1200px) {
+    
+  }
 `;

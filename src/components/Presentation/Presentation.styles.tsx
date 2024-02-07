@@ -52,7 +52,7 @@ export const PresentationDiv = styled.div`
   }
 
   @media (min-width: 1200px) {
-   
+
   }
 `;
 

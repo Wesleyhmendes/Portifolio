@@ -67,9 +67,14 @@ export const TechButton = styled.button`
 
   }
 
-  &:hover {
+  &.off:hover {
     cursor: pointer;
-    color: #4378e2a3;
+    color: #434343a0;
+  }
+
+  &.on:hover {
+    cursor: pointer;
+    color: #ffffff9b;
   }
 
   @media (min-width: 800px) {
@@ -188,5 +193,24 @@ export const NodeImg = styled.img`
 export const TechIconName = styled.p`
   &:hover {
     color: #ff3838;
+  }
+`;
+
+export const TechSkillsH3 = styled.h2`
+  color: #ff3838;
+  font-family: Poppins;
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: 10%;
+  text-align: center;
+
+  @media (min-width: 800px) {
+    margin-top: 9%;
+    font-size: 33px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-top: 5%;
+    font-size: 33px;
   }
 `;

@@ -30,11 +30,11 @@ export const SocialImg = styled.img`
   }
 
   @media (min-width: 800px) {
-    width: 80px;
+
   }
 
   @media (min-width: 1200px) {
-    
+
   }
 `;
 
@@ -45,7 +45,7 @@ export const FooterP = styled.p`
   margin-bottom: 1.5em;
 
   @media (min-width: 800px) {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   @media (min-width: 1200px) {
