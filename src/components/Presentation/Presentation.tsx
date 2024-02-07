@@ -1,4 +1,6 @@
+/* eslint-disable max-len */
 import wesley from '../../assets/presentation/foto-perfil-amarela.png';
+import cv from '../../assets/CV/Wesley-CV-2024.pdf';
 import {
   PresentationPicture,
   PresentationDiv,
@@ -32,9 +34,11 @@ function Presentation() {
         </PresentationDivP>
       </PresentationDiv>
       <PresentationButtonDiv>
-        <PresentationCVButton>
-          Baixar Currículo
-        </PresentationCVButton>
+        <a href={ cv } download>
+          <PresentationCVButton>
+            Baixar Currículo
+          </PresentationCVButton>
+        </a>
       </PresentationButtonDiv>
     </PresentationSection>
   );
