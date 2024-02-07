@@ -139,7 +139,7 @@ function Projects() {
             </ProjectAccessBtn>
           </ProjectLink>
         </ProjectDescriptionDiv>
-        <ProjectImg src={ wallet } alt="notebook rodando o aplicativo " />
+        <ProjectImgDesktop src={ wallet } alt="notebook rodando o aplicativo " />
       </ProjectDiv>
     </ProjectSection>
   );

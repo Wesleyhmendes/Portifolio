@@ -291,6 +291,7 @@ export const ProjectAccessBtn = styled.button`
   }
 
   @media (min-width: 1200px) {
-    
+    font-size: 17px;
+    width: 180px;
   }
 `;
