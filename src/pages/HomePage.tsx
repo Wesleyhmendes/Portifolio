@@ -3,7 +3,7 @@ import Presentation from '../components/Presentation/Presentation';
 import Technologies from '../components/Technologies/Technologies';
 import Projects from '../components/Projects/Projects';
 import Footer from '../components/Footer/Footer';
-import { Divisor } from './HomePage.styles';
+import { Divisor, DivisorFooter } from './HomePage.styles';
 
 function HomePage() {
   return (
@@ -14,7 +14,7 @@ function HomePage() {
       <Technologies />
       <Divisor />
       <Projects />
-      <Divisor />
+      <DivisorFooter />
       <Footer />
     </body>
   );

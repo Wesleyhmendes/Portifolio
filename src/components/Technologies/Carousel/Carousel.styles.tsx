@@ -11,7 +11,7 @@ const slideAnimation = keyframes`
 
 export const TagsContainer = styled.div`
   overflow: hidden;
-  padding: 60px 0;
+  padding: 50px 0 15px;
   background: white;
   white-space: nowrap;
   position: relative;
@@ -44,7 +44,7 @@ export const TagsContainer = styled.div`
 
 export const TagsSlide = styled.div`
   display: inline-block;
-  animation: ${slideAnimation} 15s infinite linear;
+  animation: ${slideAnimation} 20s infinite linear;
 `;
 
 export const TagButton = styled.button`
@@ -53,10 +53,10 @@ export const TagButton = styled.button`
   border: none;
   color: #FFFF;
   font-family: Poppins;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 400;
   height: 40px;
   padding: 5px;
-  width: 180px;
+  width: 200px;
   margin: 0 7px;
 `;

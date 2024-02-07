@@ -3,6 +3,12 @@ import styled from 'styled-components';
 export const Divisor = styled.hr`
   border-top: 2px solid #BBBBBB;
   margin: 0 auto;
-  margin-top: 15%;
+  margin-top: 14%;
+  width: 85%;
+`;
+
+export const DivisorFooter = styled.hr`
+  border-top: 2px solid #BBBBBB;
+  margin: 0 auto;
   width: 85%;
 `;

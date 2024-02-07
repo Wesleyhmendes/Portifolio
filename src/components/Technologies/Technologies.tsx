@@ -15,6 +15,7 @@ import mysql from '../../assets/languages/back/mysql.png';
 import {
   TechSection,
   TechH1,
+  TechSkillsH3,
   NodeImg,
   TechIconImg,
   TechButtonDiv,
@@ -126,7 +127,9 @@ function Technologies() {
         </TechDivIconsInsideBack>
 
       </TechDivIconsOutsideBack>
-
+      <TechSkillsH3>
+        Skills
+      </TechSkillsH3>
       <Carousel />
 
     </TechSection>
