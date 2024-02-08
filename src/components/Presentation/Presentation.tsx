@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 import wesley from '../../assets/presentation/foto-perfil-amarela.png';
 import cv from '../../assets/CV/Wesley-CV-2024.pdf';
 import {
@@ -12,6 +11,7 @@ import {
   PresentationButtonDiv,
   PresentationPictureDiv,
 } from './Presentation.styles';
+import ScrollArrow from './ScrollArrow/ScrollArrow';
 
 function Presentation() {
   return (
@@ -40,6 +40,7 @@ function Presentation() {
           </PresentationCVButton>
         </a>
       </PresentationButtonDiv>
+      <ScrollArrow />
     </PresentationSection>
   );
 }

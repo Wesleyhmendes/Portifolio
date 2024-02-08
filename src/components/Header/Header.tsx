@@ -16,9 +16,9 @@ function HeaderComponent() {
         <HeaderDivImg src={ headerHomeIcon } alt="home icon" />
       </HomeButton>
       <HeaderDiv>
-        <HeaderDivH3 href="https://github.com/Wesleyhmendes">Projetos</HeaderDivH3>
+        <HeaderDivH3 href="https://github.com/Wesleyhmendes" target="blanket">Projetos</HeaderDivH3>
         <HeaderDivH3 onClick={ () => navigate('/contact') }>Contato</HeaderDivH3>
-        <HeaderDivH3 href="https://www.linkedin.com/in/wesley-mendes/">Linkedin</HeaderDivH3>
+        <HeaderDivH3 href="https://www.linkedin.com/in/wesley-mendes/" target="blanket">Linkedin</HeaderDivH3>
       </HeaderDiv>
     </Header>
   );
