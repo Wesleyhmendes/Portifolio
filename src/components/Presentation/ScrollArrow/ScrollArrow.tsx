@@ -1,7 +1,4 @@
-import {
-  DownArrow,
-  ArrowHead,
-} from './ScrollArrow.styles';
+import { DownArrow, ArrowHead } from './ScrollArrow.styles';
 
 function ScrollArrow() {
   return (

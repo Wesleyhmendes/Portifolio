@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 
 // Min screen = 480p
 export const PresentationSection = styled.section`
