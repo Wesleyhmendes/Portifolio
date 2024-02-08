@@ -1,4 +1,6 @@
-/* eslint-disable max-len */
+/* eslint-disable jsx-a11y/control-has-associated-label */
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable jsx-a11y/anchor-has-content */
 import wesley from '../../assets/presentation/foto-perfil-amarela.png';
 import cv from '../../assets/CV/Wesley-CV-2024.pdf';
 import {
@@ -12,6 +14,7 @@ import {
   PresentationButtonDiv,
   PresentationPictureDiv,
 } from './Presentation.styles';
+import ScrollArrow from './ScrollArrow/ScrollArrow';
 
 function Presentation() {
   return (
@@ -40,6 +43,7 @@ function Presentation() {
           </PresentationCVButton>
         </a>
       </PresentationButtonDiv>
+      <ScrollArrow />
     </PresentationSection>
   );
 }
