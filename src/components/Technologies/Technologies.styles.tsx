@@ -36,19 +36,23 @@ export const TechH1 = styled.h1`
 export const TechButtonDiv = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 72%;
+  width: 80%;
 
   @media (min-width: 800px) {
-    width: 40%;
+    width: 30%;
   }
 
   @media (min-width: 1200px) {
     width: 25%;
   }
+
+  @media (min-width: 1600px) {
+    width: 19%;
+  }
 `;
 
 export const TechButton = styled.button`
-  border-radius: 10px;
+  background: transparent;
   border: none;
   font-size: 18px;
   font-weight: 700;
@@ -56,25 +60,23 @@ export const TechButton = styled.button`
   width: 145px;
 
   &.on {
-    background-color: #000000;
-    color: #ffffff;
+    border-bottom: 2px solid #1A44DB;
   }
 
   &.off {
-    background-color: #ffffff;
-    box-shadow: 0px 2.8px 7px 0.8px rgba(0,0,0,0.3);
-    color: #000000;
-
+    border-bottom: 2px solid #999999;
   }
 
   &.off:hover {
+    border-radius: 5px;
+    border-bottom: none;
+    background: #1A44DB;
     cursor: pointer;
-    color: #434343a0;
+    color: #FFFF;
   }
 
   &.on:hover {
     cursor: pointer;
-    color: #ffffff9b;
   }
 
   @media (min-width: 800px) {
