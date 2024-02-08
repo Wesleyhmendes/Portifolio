@@ -46,7 +46,8 @@ export const HeaderDivH3 = styled.a`
   width: 100px;
 
   &:hover {
-    font-size: 21px;
     color: #FF3838;
+    cursor: pointer;
+    font-size: 21px;
   }
 `;
