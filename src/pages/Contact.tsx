@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-max-depth */
 import Footer from '../components/Footer/Footer';
 import Header from '../components/Header/Header';
 import email from '../assets/contact/email.png';
