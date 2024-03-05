@@ -1,5 +1,5 @@
-import wesley from '../../assets/presentation/foto-perfil-amarela.png';
-import cv from '../../assets/CV/Wesley-CV-2024.pdf';
+import profilePicture from '../../assets/presentation/foto-perfil-amarela.png';
+import cv from '../../assets/CV/Currículo_Wesley_fullstack.pdf';
 import {
   PresentationPicture,
   PresentationDiv,
@@ -18,7 +18,7 @@ function Presentation() {
     <PresentationSection>
       <PresentationPictureDiv>
         <PresentationPicture
-          src={ wesley }
+          src={ profilePicture }
           alt="Foto de perfil"
         />
       </PresentationPictureDiv>

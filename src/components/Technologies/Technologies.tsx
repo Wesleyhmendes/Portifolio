@@ -44,7 +44,7 @@ function Technologies() {
   }
 
   return (
-    <TechSection>
+    <TechSection id="techSectionId">
 
       <TechH1>Linguagens e tecnologias</TechH1>
 

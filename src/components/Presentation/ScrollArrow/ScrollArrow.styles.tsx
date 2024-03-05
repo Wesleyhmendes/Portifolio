@@ -13,6 +13,11 @@ const jumpAnimation = keyframes`
 `;
 
 export const DownArrow = styled.div`
+
+  &:hover {
+    cursor: pointer;
+  }
+
   @media (min-width: 1200px) {
     position: absolute;
     top: calc(100vh - 80px);
