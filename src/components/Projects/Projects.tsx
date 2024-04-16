@@ -1,7 +1,6 @@
 import iphoneRecipeApp from '../../assets/projects/iphone-byte-for-bite.png';
 import iphoneCodeNews from '../../assets/projects/iphone_site_noticias.png';
 import TFC2 from '../../assets/projects/TFC2.png';
-import wallet from '../../assets/projects/wallet.png';
 import * as S from './Projects.styles';
 
 function Projects() {
