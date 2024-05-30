@@ -19,7 +19,7 @@ function Presentation() {
       <div className="textBtn">
         <PresentationDiv>
           <h2>Olá, eu sou o Wesley</h2>
-          <h1>Desenvolvedor Web</h1>
+          <h1>Desenvolvedor Web Full Stack</h1>
           <p>
             Trabalho com front-end como voluntário e possuo diversos
             projetos individuais e em equipe com uso de React e TypeScript

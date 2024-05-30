@@ -47,58 +47,56 @@ export const ProjectDiv = styled.div`
         gap: 1rem;
       }
 
-      .front-end-tag {
+      .front-end-tag,
+      .backend-tag,
+      .fullstack-tag {
         background-color: transparent;
         border: none;
         color: #FF3838;
         font-weight: 700;
       }
 
-      .backend-tag {
-        background-color: transparent;
+      .front-end-tag { color: #FF3838; }
+      .backend-tag { color: #6D4EED; }
+      .fullstack-tag { color: #1338da; }
+
+      .react-tag,
+      .ts-tag,
+      .node-tag,
+      .java-tag,
+      .docker-tag,
+      .php-laravel-tag {
         border: none;
-        color: #6D4EED;
-        font-weight: 700;
+        border-radius: 1rem;
+        font-weight: 500;
+        padding: 0rem 1rem;
+        color: #fff;
       }
 
       .react-tag {
         background-color: #5ED3F3;
-        border: none;
-        border-radius: 1rem;
-        font-weight: 500;
-        padding: 0 0.7rem;
-        color: #fff;
-
       }
 
       .ts-tag {
         background-color: #2F74C0;
-        border: none;
-        border-radius: 1rem;
-        font-weight: 500;
-        padding: 0 0.7rem;
-        color: #fff;
 
       }
 
       .node-tag {
         background-color: #8BBF3D;
-        border: none;
-        border-radius: 1rem;
-        font-weight: 500;
-        padding: 0 0.7rem;
-        color: #fff;
 
+      }
+
+      .java-tag {
+        background-color: #EA6E08;
       }
 
       .docker-tag {
         background-color: #0997E5;
-        border: none;
-        border-radius: 1rem;
-        font-weight: 500;
-        padding: 0 0.7rem;
-        color: #fff;
+      }
 
+      .php-laravel-tag {
+        background-color: #ff2104;
       }
     }
     
