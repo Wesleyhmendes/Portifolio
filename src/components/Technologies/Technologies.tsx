@@ -1,30 +1,27 @@
 import { useState } from 'react';
-import react from '../../assets/languages/front/react js.png';
-import js from '../../assets/languages/front/java-script-logo.png';
+import react from '../../assets/languages/front/react.png';
+import js from '../../assets/languages/front/javascript.png';
 import ts from '../../assets/languages/front/typescript.png';
-import css from '../../assets/languages/front/css-3.png';
+import css from '../../assets/languages/front/css.png';
 import redux from '../../assets/languages/front/redux.png';
 import bst from '../../assets/languages/front/bootstrap.png';
+import next from '../../assets/languages/front/nextjs.png';
+import tailwind from '../../assets/languages/front/tailwind.png';
 
-import node from '../../assets/languages/back/node js.png';
+import node from '../../assets/languages/back/nodejs.png';
 import python from '../../assets/languages/back/python.png';
-import postgre from '../../assets/languages/back/postgre SQL.png';
+import postgre from '../../assets/languages/back/postgre.png';
 import docker from '../../assets/languages/back/docker.png';
 import mysql from '../../assets/languages/back/mysql.png';
+import laravel from '../../assets/languages/back/laravel.png';
+import php from '../../assets/languages/back/php.png';
+import java from '../../assets/languages/back/java.png';
 
 import {
   TechSection,
-  TechH1,
-  TechSkillsH3,
-  NodeImg,
-  TechIconImg,
   TechButtonDiv,
-  TechIconName,
-  TechButton,
-  TechDivIconsInsideFront,
   TechDivIconsOutsideFront,
   TechDivIconsOutsideBack,
-  TechDivIconsInsideBack,
 } from './Technologies.styles';
 import Carousel from './Carousel/Carousel';
 
@@ -46,90 +43,114 @@ function Technologies() {
   return (
     <TechSection id="techSectionId">
 
-      <TechH1>Linguagens e tecnologias</TechH1>
+      <h1>Linguagens e tecnologias</h1>
 
       <TechButtonDiv>
-
-        <TechButton
+        <button
           className={ clickedFront ? 'on' : 'off' }
           onClick={ () => handleClick('front') }
         >
           front-end
-        </TechButton>
-        <TechButton
+        </button>
+        <button
           className={ clickedBack ? 'on' : 'off' }
           onClick={ () => handleClick('back') }
         >
           back-end
-        </TechButton>
+        </button>
 
       </TechButtonDiv>
 
       <TechDivIconsOutsideFront className={ clickedFront ? 'on' : 'off' }>
 
-        <TechDivIconsInsideFront>
-          <TechIconImg src={ react } alt="ícone  react" />
-          <TechIconName>React.js</TechIconName>
-        </TechDivIconsInsideFront>
+        <div>
+          <img src={ next } alt="ícone  next" />
+          <p>Next.js</p>
+        </div>
 
-        <TechDivIconsInsideFront>
-          <TechIconImg src={ js } alt="ícone  javascript" />
-          <TechIconName>JavaScript</TechIconName>
-        </TechDivIconsInsideFront>
+        <div>
+          <img src={ react } alt="ícone  react" />
+          <p>React.js</p>
+        </div>
 
-        <TechDivIconsInsideFront>
-          <TechIconImg src={ ts } alt="ícone  typescript" />
-          <TechIconName>TypeScript</TechIconName>
-        </TechDivIconsInsideFront>
+        <div>
+          <img src={ js } alt="ícone  javascript" />
+          <p>JavaScript</p>
+        </div>
 
-        <TechDivIconsInsideFront>
-          <TechIconImg src={ css } alt="ícone css" />
-          <TechIconName>CSS</TechIconName>
-        </TechDivIconsInsideFront>
+        <div>
+          <img src={ ts } alt="ícone  typescript" />
+          <p>TypeScript</p>
+        </div>
 
-        <TechDivIconsInsideFront>
-          <TechIconImg src={ redux } alt="ícone  redux" />
-          <TechIconName>Redux</TechIconName>
-        </TechDivIconsInsideFront>
+        <div>
+          <img src={ tailwind } alt="ícone  tailwind" />
+          <p>Tailwind</p>
+        </div>
 
-        <TechDivIconsInsideFront>
-          <TechIconImg src={ bst } alt="ícone bootstrap" />
-          <TechIconName>Bootstrap</TechIconName>
-        </TechDivIconsInsideFront>
+        <div>
+          <img src={ bst } alt="ícone bootstrap" />
+          <p>Bootstrap</p>
+        </div>
+
+        <div>
+          <img src={ css } alt="ícone css" />
+          <p>CSS</p>
+        </div>
+
+        <div>
+          <img src={ redux } alt="ícone  redux" />
+          <p>Redux</p>
+        </div>
 
       </TechDivIconsOutsideFront>
 
       <TechDivIconsOutsideBack className={ clickedBack ? 'on' : 'off' }>
 
-        <TechDivIconsInsideBack>
-          <NodeImg className="node" src={ node } alt="ícone  Node js" />
-          <TechIconName>Node.js</TechIconName>
-        </TechDivIconsInsideBack>
+        <div>
+          <img className="java" src={ java } alt="ícone  Java" />
+          <p>Java</p>
+        </div>
 
-        <TechDivIconsInsideBack>
-          <TechIconImg src={ python } alt="ícone  Python" />
-          <TechIconName>Python</TechIconName>
-        </TechDivIconsInsideBack>
+        <div>
+          <img className="node" src={ node } alt="ícone  Node js" />
+          <p>Node.js</p>
+        </div>
 
-        <TechDivIconsInsideBack>
-          <TechIconImg src={ postgre } alt="ícone  PostgreSQL" />
-          <TechIconName>PostgreSQL</TechIconName>
-        </TechDivIconsInsideBack>
+        <div>
+          <img className="laravel" src={ laravel } alt="ícone  laravel" />
+          <p>Laravel</p>
+        </div>
 
-        <TechDivIconsInsideBack>
-          <TechIconImg src={ docker } alt="ícone Docker" />
-          <TechIconName>Docker</TechIconName>
-        </TechDivIconsInsideBack>
+        <div>
+          <img className="php" src={ php } alt="ícone  php" />
+          <p>Php</p>
+        </div>
 
-        <TechDivIconsInsideBack>
-          <TechIconImg src={ mysql } alt="ícone  MySQL" />
-          <TechIconName>MySQL</TechIconName>
-        </TechDivIconsInsideBack>
+        <div>
+          <img src={ python } alt="ícone  Python" />
+          <p>Python</p>
+        </div>
+
+        <div>
+          <img src={ postgre } alt="ícone  PostgreSQL" />
+          <p>PostgreSQL</p>
+        </div>
+
+        <div>
+          <img src={ mysql } alt="ícone  MySQL" />
+          <p>MySQL</p>
+        </div>
+
+        <div>
+          <img src={ docker } alt="ícone Docker" />
+          <p>Docker</p>
+        </div>
 
       </TechDivIconsOutsideBack>
-      <TechSkillsH3>
-        Skills
-      </TechSkillsH3>
+      <h2>
+        Outras skills
+      </h2>
       <Carousel />
 
     </TechSection>
