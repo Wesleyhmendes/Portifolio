@@ -8,290 +8,152 @@ export const ProjectSection = styled.section`
   justify-content: center;
   padding-right: 1em;
 
-
-  @media (min-width: 800px) {
-    margin: 0 auto;
-    width: 75%;
-  }
-
-  @media (min-width: 1200px) {
-    margin: 0 auto;
-    width: 75%;
-  }
-`;
-
-export const ProjectH1 = styled.h1`
-  color: #FF3838;
-  font-family: Poppins;
-  font-size: 30px;
-  font-weight: 800;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  text-align: center;
-
-  @media (min-width: 800px) {
-  font-size: 50px;
-  }
-
-  @media (min-width: 1200px) {
-    font-size: 60px;
+  h1 {
+    color: #FF3838;
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
   }
 `;
 
 export const ProjectDiv = styled.div`
   display: flex;
-  margin-bottom: 2em;
+  gap: 1rem;
+  width: 97%;
+  margin-bottom: 3rem;
 
-  @media (min-width: 800px) {
-    margin-bottom: 6em;
-  }
+  img { display: none; }
 
-  @media (min-width: 1200px) {
-    margin-bottom: 8em;
-  }
-`;
+  div {
+    h2 {
+      color: #333;
+      font-weight: 600;
+    }
 
-export const ProjectImg = styled.img`
-  height: 200px;
-  padding-left: 1.5em;
+    div {
+      display: flex;
+      flex-direction: column;
 
-  @media (min-width: 800px) {
-    height: 300px;
-  }
+      h4 {
+        color: #333;
+        font-weight: 600;
+      }
 
-  @media (min-width: 1200px) {
-    height: 350px;
-  }
-`;
+      .tags-div {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+      }
 
-export const ProjectImgDesktop = styled.img`
-  display: none;
+      .front-end-tag,
+      .backend-tag,
+      .fullstack-tag {
+        background-color: transparent;
+        border: none;
+        color: #FF3838;
+        font-weight: 700;
+      }
 
-  @media (min-width: 800px) {
-  }
+      .front-end-tag { color: #FF3838; }
+      .backend-tag { color: #6D4EED; }
+      .fullstack-tag { color: #1338da; }
 
-  @media (min-width: 1368px) {
-    display: inline;
-    height: 350px;
-    margin-left: 15px;
-  }
-`;
+      .react-tag,
+      .ts-tag,
+      .node-tag,
+      .java-tag,
+      .docker-tag,
+      .php-laravel-tag {
+        border: none;
+        border-radius: 1rem;
+        font-weight: 500;
+        padding: 0rem 1rem;
+        color: #fff;
+      }
 
-export const ProjectDescriptionDiv = styled.div`
-  margin-left: 1.5em;
+      .react-tag {
+        background-color: #5ED3F3;
+      }
 
-  @media (min-width: 800px) {
+      .ts-tag {
+        background-color: #2F74C0;
+
+      }
+
+      .node-tag {
+        background-color: #8BBF3D;
+
+      }
+
+      .java-tag {
+        background-color: #EA6E08;
+      }
+
+      .docker-tag {
+        background-color: #0997E5;
+      }
+
+      .php-laravel-tag {
+        background-color: #ff2104;
+      }
+    }
     
+    .acessar-projeto {
+      background-color: #FF3838;
+      box-shadow: 2px 1px 2px 0px rgba(68, 68, 68, 0.3);
+      border: none;
+      border-radius: 0.5rem;
+      color: #ffffff;
+      font-weight: 600;
+      margin-top: 1rem;
+      padding: 0.3rem 0.7rem;
+      text-align: center;
+
+      &:hover {
+        background-color: #ff1313;
+        cursor: pointer;
+      }
+    }
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 768px) {
+    .img-div {
+      max-width: 25%;
+      min-width: 25%;
 
-  }
-`;
-
-export const ProjectH2 = styled.h2`
-  color: #FF3838;
-  font-family: Poppins;
-  font-size: 20px;
-  font-weight: 800;
-  margin-bottom: 1em;
-  text-decoration: none;
-
-  @media (min-width: 800px) {
-    font-size: 30px;
-  }
-
-  @media (min-width: 1200px) {
-    font-size: 35px;
-  }
-`;
-
-export const ProjectTagDiv = styled.div`
-  align-items: center;
-  display: flex;
-  gap: 0.5em;
-  margin-bottom: 0.5em;
-  flex-wrap: wrap;
-
-  @media (min-width: 800px) {
-    gap: 1.5em;
-    margin-bottom: 1.5em;
+      .iphone-pic {
+        display: inline;
+        height: fit-content;
+        width: 100%;
+      }
+      
+      .mac-pic {
+        display: inline;
+        height: fit-content;
+        width: 100%;
+      }
+    }
   }
 
-  @media (min-width: 1200px) {
-    gap: 1.5em;
-    margin-bottom: 2.5em;
-  }
-`;
+  @media (min-width: 1280px) {
+    width: 60%;
 
-export const ProjectH4 = styled.h4`
-  font-family: Poppins;
-  font-size: 15px;
-  font-weight: 600;
+      .img-div {
+        max-width: 15%;
+        min-width: 15%;
 
-  @media (min-width: 800px) {
-    font-size: 20px;
-  }
 
-  @media (min-width: 1200px) {
-    
-  }
-`;
-
-export const ProjectTagsReact = styled.button`
-  border: none;
-  border-radius: 7px;
-  background-color: #5ed3f3;
-  color: #FFFF;
-  font-size: 15px;
-  font-family: Poppins;
-  font-weight: 500;
-  width: 70px;
-
-  @media (min-width: 800px) {
-    font-size: 18px;
-  }
-
-  @media (min-width: 1200px) {
-    width: 90px;
-  }
-`;
-
-export const ProjectTagsTs = styled.button`
-  border: none;
-  border-radius: 7px;
-  background-color: #2f74c0;
-  color: #FFFF;
-  font-size: 15px;
-  font-family: Poppins;
-  font-weight: 500;
-  width: 120px;
-
-  @media (min-width: 800px) {
-    font-size: 18px;
-  }
-
-  @media (min-width: 1200px) {
-    width: 140px;
-  }
-`;
-
-export const ProjectTagsNode = styled.button`
-  border: none;
-  border-radius: 7px;
-  background-color: #8BBF3D;
-  color: #FFFF;
-  font-size: 15px;
-  font-family: Poppins;
-  font-weight: 500;
-  width: 120px;
-
-  @media (min-width: 800px) {
-    font-size: 18px;
-  }
-
-  @media (min-width: 1200px) {
-    width: 140px;
-  }
-`;
-
-export const ProjectTagsDocker = styled.button`
-  border: none;
-  border-radius: 7px;
-  background-color: #0997e5;
-  color: #FFFF;
-  font-size: 15px;
-  font-family: Poppins;
-  font-weight: 500;
-  width: 120px;
-
-  @media (min-width: 800px) {
-    font-size: 18px;
-  }
-
-  @media (min-width: 1200px) {
-    width: 140px;
-  }
-`;
-
-export const ProjectTagsFront = styled.button`
-  border: none;
-  border-radius: 7px;
-  background-color: #FF3838;
-  color: #FFFF;
-  font-size: 15px;
-  font-family: Poppins;
-  font-weight: 500;
-  width: 120px;
-
-  @media (min-width: 800px) {
-    font-size: 18px;
-  }
-
-  @media (min-width: 1200px) {
-    width: 140px;
-  }
-`;
-
-export const ProjectTagsBack = styled.button`
-  border: none;
-  border-radius: 7px;
-  background-color: #292929;
-  color: #FFFF;
-  font-size: 15px;
-  font-family: Poppins;
-  font-weight: 500;
-  width: 120px;
-
-  @media (min-width: 800px) {
-    font-size: 18px;
-  }
-
-  @media (min-width: 1200px) {
-    width: 140px;
-  }
-`;
-
-export const ProjectP = styled.p`
-  font-size: 15px;
-  font-family: Poppins;
-
-  @media (min-width: 800px) {
-    font-size: 20px;
-  }
-
-  @media (min-width: 1200px) {
-    font-size: 22px;
-  }
-`;
-
-export const ProjectLink = styled.a`
-  text-decoration: none;
-`;
-
-export const ProjectAccessBtn = styled.button`
-  background-color: #FF3838;
-  box-shadow: 0px 2.8px 7px 0.8px rgba(0,0,0,0.3);
-  border: none;
-  border-radius: 10px;
-  color: #ffffff;
-  font-weight: 700;
-  height: 40px;
-  margin-top: 1em;
-  text-align: center;
-  width: 150px;
-
-  &:hover {
-    background-color: #ff1313;
-    cursor: pointer;
-  }
-
-  @media (min-width: 800px) {
-   
-  }
-
-  @media (min-width: 1200px) {
-    font-size: 17px;
-    width: 180px;
-  }
+        .iphone-pic {
+          display: inline;
+          height: fit-content;
+        }
+        
+        .mac-pic {
+          display: inline;
+          height: fit-content;
+        }
+      }
+    }
 `;

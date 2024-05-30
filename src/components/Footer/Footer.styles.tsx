@@ -39,16 +39,7 @@ export const SocialImg = styled.img`
 `;
 
 export const FooterP = styled.p`
-  font-size: 15px;
   font-family: Poppins;
   font-weight: 500;
   margin-bottom: 1.5em;
-
-  @media (min-width: 800px) {
-    font-size: 18px;
-  }
-
-  @media (min-width: 1200px) {
-    
-  }
 `;

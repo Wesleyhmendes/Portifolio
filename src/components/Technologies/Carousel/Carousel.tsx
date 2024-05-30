@@ -9,12 +9,10 @@ function Carousel() {
     <TagsContainer>
       { Array.from({ length: 3 }, (_, i) => (
         <TagsSlide key={ i } className="tags-slide">
-          <TagButton>Next.js</TagButton>
           <TagButton>Custom Hooks</TagButton>
           <TagButton>Context Api</TagButton>
           <TagButton>RTL Tests</TagButton>
           <TagButton>Git</TagButton>
-          <TagButton>TailWind</TagButton>
           <TagButton>Express</TagButton>
           <TagButton>Arquitetura de Software</TagButton>
           <TagButton>JSON Web Token</TagButton>
@@ -23,6 +21,7 @@ function Carousel() {
           <TagButton>POO</TagButton>
           <TagButton>Testes de integração</TagButton>
           <TagButton>Testes Unitários</TagButton>
+          <TagButton>Metodologias àgeis</TagButton>
         </TagsSlide>
       )) }
     </TagsContainer>
