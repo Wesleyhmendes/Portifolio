@@ -7,19 +7,28 @@ export function Stack() {
   const { t, localize } = useTranslation();
 
   return (
-    <Section id="stack" title={t('stack.title')}>
-      <dl className="flex flex-col gap-6">
+    <Section id="stack" index="03" title={t('stack.title')}>
+      <div className="flex flex-col gap-8">
         {stack.map((group, index) => (
-          <Reveal
-            key={group.id}
-            index={index}
-            className="grid gap-1 md:grid-cols-[8rem_1fr] md:gap-6"
-          >
-            <dt className="font-mono text-xs text-muted md:pt-1">{localize(group.label)}</dt>
-            <dd className="text-body">{group.items.join(' · ')}</dd>
+          <Reveal key={group.id} index={index}>
+            <h3 className="mb-3 font-mono text-xs font-normal text-muted">
+              {localize(group.label)}
+            </h3>
+            {/* as divisórias moram nas células: uma linha incompleta termina
+                onde o último item termina, sem deixar um bloco vazio */}
+            <ul className="grid grid-cols-2 overflow-hidden rounded-xs border-t border-l border-line sm:grid-cols-3 md:grid-cols-4">
+              {group.items.map((item) => (
+                <li
+                  key={item}
+                  className="border-r border-b border-line px-4 py-3 text-sm text-body"
+                >
+                  {item}
+                </li>
+              ))}
+            </ul>
           </Reveal>
         ))}
-      </dl>
+      </div>
     </Section>
   );
 }

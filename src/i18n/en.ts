@@ -21,6 +21,8 @@ export const en = {
   'about.title': 'About',
   'contact.title': 'Contact',
   'contact.lead': 'Open to remote roles building agentic systems.',
+  'contact.copy': 'Copy',
+  'contact.copied': 'Copied',
   'contact.downloadCv': 'Download CV (PDF)',
   'footer.source': 'Source of this site',
 } as const;

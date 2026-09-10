@@ -3,13 +3,15 @@ import { Reveal } from './Reveal';
 
 type SectionProps = {
   id: string;
+  /** Índice em mono que dá estrutura visual à rolagem. */
+  index: string;
   title: string;
   children: ReactNode;
   /** Alterna o fundo para separar blocos sem recorrer a divisórias. */
   subtle?: boolean;
 };
 
-export function Section({ id, title, children, subtle = false }: SectionProps) {
+export function Section({ id, index, title, children, subtle = false }: SectionProps) {
   return (
     <section
       id={id}
@@ -18,9 +20,14 @@ export function Section({ id, title, children, subtle = false }: SectionProps) {
     >
       <div className="mx-auto w-full max-w-content px-6">
         <Reveal>
-          <h2 id={`${id}-title`} className="mb-10 text-3xl md:mb-14 md:text-4xl">
-            {title}
-          </h2>
+          <div className="mb-10 flex items-baseline gap-4 md:mb-14">
+            <span aria-hidden="true" className="font-mono text-xs text-muted">
+              {index}
+            </span>
+            <h2 id={`${id}-title`} className="text-3xl md:text-4xl">
+              {title}
+            </h2>
+          </div>
         </Reveal>
         {children}
       </div>

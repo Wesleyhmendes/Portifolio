@@ -29,7 +29,9 @@ describe('conteúdo', () => {
       expect(trigger.closest('h3')).not.toBeNull();
     }
     for (const group of stack) {
-      expect(screen.getByText(group.items.join(' · '))).toBeInTheDocument();
+      for (const item of group.items) {
+        expect(screen.getAllByText(item).length).toBeGreaterThan(0);
+      }
     }
     expect(screen.getByRole('link', { name: profile.email })).toHaveAttribute(
       'href',
@@ -40,6 +42,38 @@ describe('conteúdo', () => {
   it('mantém um único h1 na página', () => {
     renderApp();
     expect(screen.getAllByRole('heading', { level: 1 })).toHaveLength(1);
+  });
+});
+
+describe('diagramas', () => {
+  it('dá a cada projeto um diagrama com descrição textual', () => {
+    renderApp();
+
+    for (const project of projects) {
+      expect(screen.getByRole('img', { name: project.diagramTitle.en })).toBeInTheDocument();
+    }
+  });
+
+  it('traduz a descrição do diagrama junto com o resto', async () => {
+    const user = userEvent.setup();
+    renderApp();
+
+    await user.click(screen.getAllByRole('button', { name: /switch to portuguese/i })[0]);
+
+    expect(screen.getByRole('img', { name: projects[0].diagramTitle.pt })).toBeInTheDocument();
+  });
+});
+
+describe('contato', () => {
+  it('copia o e-mail e anuncia o resultado', async () => {
+    // userEvent instala sua própria área de transferência; lemos dela
+    const user = userEvent.setup();
+    renderApp();
+
+    await user.click(screen.getByRole('button', { name: /^copy$/i }));
+
+    expect(await navigator.clipboard.readText()).toBe(profile.email);
+    expect(await screen.findByRole('status')).toHaveTextContent('Copied');
   });
 });
 

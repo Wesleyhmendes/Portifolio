@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useTranslation } from '../i18n/useTranslation';
 import { earlierProjects, projects } from '../content/projects';
+import { diagrams } from './diagrams';
 import { Section } from './ui/Section';
 import { Reveal } from './ui/Reveal';
 import { Tag } from './ui/Tag';
@@ -11,36 +12,49 @@ export function Work() {
   const [showEarlier, setShowEarlier] = useState(false);
 
   return (
-    <Section id="work" title={t('work.title')}>
+    <Section id="work" index="01" title={t('work.title')}>
       <ul className="flex flex-col gap-4">
-        {projects.map((project, index) => (
-          <li key={project.id}>
-            <Reveal index={index}>
-              <article className="rounded-md border border-line bg-surface p-6 transition-[border-color,box-shadow] duration-150 hover:border-line-strong hover:shadow-sm md:p-8">
-                <p className="font-mono text-xs text-muted">
-                  {project.year} · {localize(project.context)}
-                </p>
-                <h3 className="mt-3 text-2xl">{localize(project.title)}</h3>
-                <p className="mt-4 max-w-prose">{localize(project.description)}</p>
-                <ul className="mt-6 flex flex-wrap gap-2">
-                  {project.tags.map((tag) => (
-                    <li key={tag}>
-                      <Tag>{tag}</Tag>
-                    </li>
-                  ))}
-                </ul>
-                {project.link ? (
-                  <ExternalLink
-                    href={project.link.href}
-                    className="mt-6 inline-block text-sm text-accent"
-                  >
-                    {localize(project.link.label)} →
-                  </ExternalLink>
-                ) : null}
-              </article>
-            </Reveal>
-          </li>
-        ))}
+        {projects.map((project, index) => {
+          const Figure = diagrams[project.id];
+          return (
+            <li key={project.id}>
+              <Reveal index={index}>
+                <article className="rounded-md border border-line bg-surface p-6 transition-[border-color,box-shadow] duration-150 hover:border-line-strong hover:shadow-sm md:p-8">
+                  <div className="grid gap-8 md:grid-cols-[1fr_22rem] md:gap-10">
+                    <div>
+                      <p className="font-mono text-xs text-muted">
+                        {project.year} · {localize(project.context)}
+                      </p>
+                      <h3 className="mt-3 text-2xl">{localize(project.title)}</h3>
+                      <p className="mt-4">{localize(project.description)}</p>
+                      <ul className="mt-6 flex flex-wrap gap-2">
+                        {project.tags.map((tag) => (
+                          <li key={tag}>
+                            <Tag>{tag}</Tag>
+                          </li>
+                        ))}
+                      </ul>
+                      {project.link ? (
+                        <ExternalLink
+                          href={project.link.href}
+                          className="mt-6 inline-block text-sm text-accent"
+                        >
+                          {localize(project.link.label)} →
+                        </ExternalLink>
+                      ) : null}
+                    </div>
+
+                    {Figure ? (
+                      <div className="flex justify-center border-t border-line pt-8 md:border-t-0 md:border-l md:pt-0 md:pl-10">
+                        <Figure title={localize(project.diagramTitle)} />
+                      </div>
+                    ) : null}
+                  </div>
+                </article>
+              </Reveal>
+            </li>
+          );
+        })}
       </ul>
 
       <Reveal className="mt-12">

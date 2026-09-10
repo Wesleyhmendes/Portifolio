@@ -5,6 +5,9 @@ export type Role = {
   title: Localized;
   company: string;
   period: Localized;
+  /** Início no formato AAAA-MM; `end` ausente significa cargo atual. */
+  start: string;
+  end?: string;
   highlights: Localized[];
 };
 
@@ -14,6 +17,7 @@ export const experience: Role[] = [
     title: { en: 'Tech Lead', pt: 'Tech Lead' },
     company: 'Liquid AI',
     period: { en: 'Nov 2025 — Present', pt: 'Nov 2025 — Atual' },
+    start: '2025-11',
     highlights: [
       {
         en: 'Own the architecture of the agentic assistant and the operations CRM end to end, from domain model to deploy.',
@@ -34,6 +38,8 @@ export const experience: Role[] = [
     title: { en: 'Software Developer', pt: 'Desenvolvedor de Software' },
     company: 'Liquid AI',
     period: { en: 'Jun 2024 — Nov 2025', pt: 'Jun 2024 — Nov 2025' },
+    start: '2024-06',
+    end: '2025-11',
     highlights: [
       {
         en: 'Shipped the first production version of the WhatsApp assistant on Amazon Bedrock.',
@@ -54,6 +60,8 @@ export const experience: Role[] = [
     title: { en: 'Full Stack Developer (intern)', pt: 'Desenvolvedor Full Stack (estágio)' },
     company: '4tuna Studio',
     period: { en: 'May 2024 — Jun 2024', pt: 'Mai 2024 — Jun 2024' },
+    start: '2024-05',
+    end: '2024-06',
     highlights: [
       {
         en: 'Built features across a PHP/Laravel back end and a React front end.',

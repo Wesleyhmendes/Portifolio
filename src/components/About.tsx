@@ -8,7 +8,7 @@ export function About() {
   const { t, localize } = useTranslation();
 
   return (
-    <Section id="about" title={t('about.title')} subtle>
+    <Section id="about" index="04" title={t('about.title')} subtle>
       <Reveal>
         <div className="flex flex-col gap-6 md:flex-row md:gap-10">
           <img

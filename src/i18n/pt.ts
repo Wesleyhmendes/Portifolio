@@ -23,6 +23,8 @@ export const pt: Record<TranslationKey, string> = {
   'about.title': 'Sobre',
   'contact.title': 'Contato',
   'contact.lead': 'Aberto a vagas remotas construindo sistemas agênticos.',
+  'contact.copy': 'Copiar',
+  'contact.copied': 'Copiado',
   'contact.downloadCv': 'Baixar currículo (PDF)',
   'footer.source': 'Código deste site',
 };
