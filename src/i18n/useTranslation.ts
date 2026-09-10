@@ -1,0 +1,8 @@
+import { useContext } from 'react';
+import { LanguageContext } from './language';
+
+export function useTranslation() {
+  const context = useContext(LanguageContext);
+  if (!context) throw new Error('useTranslation precisa estar dentro de LanguageProvider');
+  return context;
+}

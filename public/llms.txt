@@ -1,0 +1,16 @@
+# Wesley Mendes
+
+> Tech Lead at Liquid AI. I build agentic AI systems that run in production, not prototypes.
+
+## Selected work
+
+- [Agentic WhatsApp assistant](https://wesleymendes.vercel.app/#work): tool-calling converse-loop on Amazon Bedrock, with a RAG sub-agent, deterministic gates and guardrails enforced in code.
+- [Multi-agent development harness](https://wesleymendes.vercel.app/#work): planner, implementer, reviewer and publisher agents dispatched over a dependency graph.
+- [Agentic operations CRM](https://wesleymendes.vercel.app/#work): hexagonal FastAPI service and React front end where agents work the pipeline alongside analysts.
+- [AI legal SaaS](https://wesleymendes.vercel.app/#work): multi-tenant product built solo, with Stripe billing and AI cost governance.
+
+## Contact
+
+- [LinkedIn](https://www.linkedin.com/in/wesley-mendes/)
+- [GitHub](https://github.com/Wesleyhmendes)
+- [CV (PDF)](https://wesleymendes.vercel.app/cv-wesley-mendes.pdf)

@@ -1,0 +1,28 @@
+import type { TranslationKey } from './en';
+
+export const pt: Record<TranslationKey, string> = {
+  'nav.work': 'Projetos',
+  'nav.experience': 'Experiência',
+  'nav.stack': 'Stack',
+  'nav.about': 'Sobre',
+  'nav.contact': 'Contato',
+  'nav.openMenu': 'Abrir menu',
+  'nav.closeMenu': 'Fechar menu',
+  'nav.skipToContent': 'Ir para o conteúdo',
+  'theme.toggle': 'Mudar para o tema escuro',
+  'theme.toggleLight': 'Mudar para o tema claro',
+  'lang.toggle': 'PT, mudar para inglês',
+  'hero.viewWork': 'Ver projetos',
+  'hero.photoAlt': 'Retrato de Wesley Mendes',
+  'work.title': 'Trabalho selecionado',
+  'work.earlier': 'Projetos anteriores',
+  'work.earlierHint': 'Projetos de bootcamp e estudo, mantidos como registro.',
+  'experience.title': 'Experiência',
+  'experience.expand': 'Mostrar detalhes de',
+  'stack.title': 'Stack',
+  'about.title': 'Sobre',
+  'contact.title': 'Contato',
+  'contact.lead': 'Aberto a vagas remotas construindo sistemas agênticos.',
+  'contact.downloadCv': 'Baixar currículo (PDF)',
+  'footer.source': 'Código deste site',
+};

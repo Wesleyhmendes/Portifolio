@@ -1,0 +1,28 @@
+export const en = {
+  'nav.work': 'Work',
+  'nav.experience': 'Experience',
+  'nav.stack': 'Stack',
+  'nav.about': 'About',
+  'nav.contact': 'Contact',
+  'nav.openMenu': 'Open menu',
+  'nav.closeMenu': 'Close menu',
+  'nav.skipToContent': 'Skip to content',
+  'theme.toggle': 'Switch to dark theme',
+  'theme.toggleLight': 'Switch to light theme',
+  'lang.toggle': 'EN, switch to Portuguese',
+  'hero.viewWork': 'View work',
+  'hero.photoAlt': 'Portrait of Wesley Mendes',
+  'work.title': 'Selected work',
+  'work.earlier': 'Earlier projects',
+  'work.earlierHint': 'Bootcamp and study projects, kept for the record.',
+  'experience.title': 'Experience',
+  'experience.expand': 'Show details for',
+  'stack.title': 'Stack',
+  'about.title': 'About',
+  'contact.title': 'Contact',
+  'contact.lead': 'Open to remote roles building agentic systems.',
+  'contact.downloadCv': 'Download CV (PDF)',
+  'footer.source': 'Source of this site',
+} as const;
+
+export type TranslationKey = keyof typeof en;
