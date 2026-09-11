@@ -1,20 +1,21 @@
-/// <reference types="vitest" />
+/// <reference types="vitest/config" />
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react-swc';
+import tailwindcss from '@tailwindcss/vite';
 
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react-swc'
-
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), tailwindcss()],
+  build: {
+    target: 'es2022',
+  },
   test: {
     globals: true,
     environment: 'jsdom',
-    setupFiles: './setupTests.ts',
+    setupFiles: './src/tests/setup.ts',
     css: true,
-    reporters: ['verbose'],
     coverage: {
-      reporter: ['text', 'json', 'html'],
-      provider: 'v8'
-    }
+      provider: 'v8',
+      reporter: ['text', 'html'],
+    },
   },
-})
+});

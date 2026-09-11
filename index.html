@@ -2,12 +2,64 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="src/assets/whm.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
-    <title>Wesley Mendes</title>
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="canonical" href="https://wesleymendes.vercel.app/" />
+    <!-- o retrato é o LCP: sem isto só é descoberto depois do bundle -->
+    <link rel="preload" as="image" href="/profile-large.webp" fetchpriority="high" />
+
+    <title>Wesley Mendes — Tech Lead &amp; AI Engineer</title>
+    <meta
+      name="description"
+      content="Wesley Mendes is a Tech Lead at Liquid AI. He builds agentic AI systems that run in production."
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://wesleymendes.vercel.app/" />
+    <meta property="og:title" content="Wesley Mendes — Tech Lead &amp; AI Engineer" />
+    <meta property="og:description" content="I build agentic AI systems that run in production." />
+    <meta property="og:image" content="https://wesleymendes.vercel.app/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Wesley Mendes — Tech Lead &amp; AI Engineer" />
+    <meta name="twitter:description" content="I build agentic AI systems that run in production." />
+    <meta name="twitter:image" content="https://wesleymendes.vercel.app/og.png" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Wesley Mendes",
+        "url": "https://wesleymendes.vercel.app/",
+        "jobTitle": "Tech Lead",
+        "worksFor": { "@type": "Organization", "name": "Liquid AI" },
+        "sameAs": ["https://github.com/Wesleyhmendes", "https://www.linkedin.com/in/wesley-mendes/"]
+      }
+    </script>
+
+    <script>
+      // Aplica tema e idioma antes da primeira pintura, para evitar o flash de
+      // tema claro em quem escolheu o escuro.
+      (function () {
+        try {
+          var theme = localStorage.getItem('portfolio:theme');
+          if (theme !== 'light' && theme !== 'dark') {
+            theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          }
+          document.documentElement.dataset.theme = theme;
+          document.documentElement.style.colorScheme = theme;
+          var lang = localStorage.getItem('portfolio:lang');
+          document.documentElement.lang =
+            lang === 'pt' || (lang === null && navigator.language.toLowerCase().startsWith('pt'))
+              ? 'pt'
+              : 'en';
+        } catch (error) {
+          void error;
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
