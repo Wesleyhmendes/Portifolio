@@ -20,12 +20,12 @@ export const experience: Role[] = [
     start: '2025-11',
     highlights: [
       {
-        en: 'Own the architecture of the agentic assistant and the operations CRM end to end, from domain model to deploy.',
-        pt: 'Respondo pela arquitetura da atendente agêntica e do CRM de operação de ponta a ponta, do modelo de domínio ao deploy.',
+        en: 'Own the architecture of the agentic assistant and the operations CRM, from domain model to deploy.',
+        pt: 'Respondo pela arquitetura da atendente agêntica e do CRM de operação, do modelo de domínio ao deploy.',
       },
       {
-        en: 'Introduced versioned ADRs and contract review as the way architectural decisions get made and kept.',
-        pt: 'Introduzi ADRs versionadas e revisão de contrato como a forma de tomar e sustentar decisões de arquitetura.',
+        en: 'Introduced versioned ADRs and contract review, so architecture decisions get written down and stay put.',
+        pt: 'Introduzi ADRs versionadas e revisão de contrato, para que decisões de arquitetura fiquem registradas e se sustentem.',
       },
       {
         en: 'Built the multi-agent harness the team uses to plan, implement and review work in parallel.',

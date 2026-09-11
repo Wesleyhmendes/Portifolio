@@ -16,7 +16,6 @@ export const en = {
   'work.earlier': 'Earlier projects',
   'work.earlierHint': 'Bootcamp and study projects, kept for the record.',
   'experience.title': 'Experience',
-  'experience.expand': 'Show details for',
   'stack.title': 'Stack',
   'about.title': 'About',
   'contact.title': 'Contact',

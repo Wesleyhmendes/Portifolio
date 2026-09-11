@@ -1,6 +1,6 @@
 # Wesley Mendes
 
-> Tech Lead at Liquid AI. I build agentic AI systems that run in production, not prototypes.
+> Tech Lead at Liquid AI. I build agentic AI systems that run in production.
 
 ## Selected work
 

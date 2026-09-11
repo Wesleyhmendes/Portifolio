@@ -11,7 +11,7 @@ export const profile = {
   photo: '/profile.webp',
   photoLarge: '/profile-large.webp',
   tagline: {
-    en: 'I build agentic AI systems that run in production, not prototypes.',
-    pt: 'Construo sistemas de IA agênticos que rodam em produção, não protótipos.',
+    en: 'I build agentic AI systems that run in production.',
+    pt: 'Construo sistemas de IA agênticos que rodam em produção.',
   } satisfies Localized,
 };

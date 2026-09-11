@@ -22,8 +22,8 @@ export const projects: Project[] = [
       pt: 'Atendente agêntica no WhatsApp',
     },
     description: {
-      en: 'A tool-calling converse-loop on Amazon Bedrock with eleven action tools and a RAG sub-agent over a knowledge base I built and publish through its own pipeline. Reliability is structural rather than prompted: deterministic gates resolve before the model runs, guardrails enforce consent and PII masking in code, and every figure is rendered in code — the model never writes a number.',
-      pt: 'Um loop de conversa com tool calling sobre Amazon Bedrock, com onze ferramentas de ação e um sub-agente de RAG sobre uma base de conhecimento que construí e publico por um pipeline próprio. A confiabilidade é estrutural, não prompted: travas determinísticas resolvem antes do modelo rodar, guardrails aplicam consentimento e mascaramento de PII em código, e todo número é renderizado em código — o modelo nunca escreve um valor.',
+      en: 'A converse loop on Amazon Bedrock where the model calls eleven action tools and a RAG sub-agent, reading from a knowledge base I built and publish through its own pipeline. The reliability lives in the code around the model. Deterministic gates resolve before it runs, guardrails enforce consent and PII masking, and every figure in a reply is rendered by code, so the model never writes a number.',
+      pt: 'Um loop de conversa sobre o Amazon Bedrock em que o modelo chama onze ferramentas de ação e um sub-agente de RAG, que lê uma base de conhecimento que construí e publico por um pipeline próprio. A confiabilidade mora no código em volta do modelo. As travas determinísticas resolvem antes de ele rodar, os guardrails aplicam consentimento e mascaramento de PII, e todo número de uma resposta é renderizado por código, então o modelo nunca escreve um valor.',
     },
     diagramTitle: {
       en: 'Architecture: WhatsApp input passes deterministic gates, then a converse loop where the Bedrock model exchanges turns with eleven tools and a RAG sub-agent, then guardrails for consent and PII masking, and finally a reply whose figures are rendered in code.',
@@ -48,8 +48,8 @@ export const projects: Project[] = [
       pt: 'Harness multiagente de desenvolvimento',
     },
     description: {
-      en: 'A planner lays the work queue out as a dependency graph and dispatches everything unblocked in parallel. Implementer agents run per service against versioned ADRs, reviewer agents send corrections back, a contract reviewer checks service boundaries, and a publisher opens the PR. Humans stay at both ends: defining the task and validating the delivery.',
-      pt: 'Um planejador organiza a fila de trabalho como um grafo de dependências e dispara em paralelo tudo que está desbloqueado. Agentes implementadores rodam por serviço contra ADRs versionadas, agentes revisores devolvem correções, um revisor de contrato checa as fronteiras entre serviços e um publicador abre o PR. O humano fica nas duas pontas: definindo a tarefa e validando a entrega.',
+      en: 'A planner turns the work queue into a dependency graph and dispatches everything unblocked at once. Implementer agents run per service against versioned ADRs, reviewer agents send corrections back, a contract reviewer checks the boundaries between services, and a publisher opens the PR. A person defines the task at one end and validates the delivery at the other.',
+      pt: 'Um planejador transforma a fila de trabalho num grafo de dependências e dispara de uma vez tudo que está desbloqueado. Agentes implementadores rodam por serviço contra ADRs versionadas, agentes revisores devolvem correções, um revisor de contrato checa as fronteiras entre serviços e um publicador abre o PR. Uma pessoa define a tarefa numa ponta e valida a entrega na outra.',
     },
     diagramTitle: {
       en: 'Architecture: a human defines the task, a planner turns it into a dependency graph and dispatches parallel lanes of implementer and reviewer agents, then a contract reviewer checks service boundaries and a publisher opens the pull request.',
@@ -66,8 +66,8 @@ export const projects: Project[] = [
       pt: 'CRM de operação agêntica',
     },
     description: {
-      en: 'Front end and API built from scratch: hexagonal architecture, published OpenAPI contract, versioned migrations with an audit trail, per-feature authorization, and a domain model with arbitration-free identity merging. Agents work the pipeline alongside human analysts.',
-      pt: 'Front-end e API construídos do zero: arquitetura hexagonal, contrato OpenAPI publicado, migrações versionadas com trilha de auditoria, autorização por funcionalidade e um modelo de domínio com fusão de identidades sem arbitragem. Agentes trabalham o funil ao lado dos analistas humanos.',
+      en: 'I built the front end and the API from scratch: a hexagonal API that publishes its OpenAPI contract, versioned migrations with an audit trail, authorization per feature, and a domain model that merges duplicate identities without arbitration. Agents work the pipeline alongside human analysts.',
+      pt: 'Construí o front-end e a API do zero: uma API hexagonal que publica seu contrato OpenAPI, migrações versionadas com trilha de auditoria, autorização por funcionalidade e um modelo de domínio que funde identidades duplicadas sem arbitragem. Agentes trabalham o funil ao lado dos analistas humanos.',
     },
     diagramTitle: {
       en: 'Architecture: analysts and agents both enter through a published OpenAPI contract, FastAPI adapters wrap a hexagonal domain core that handles identity merging, with per-feature authorization and MongoDB behind ports, and versioned migrations with an audit trail underneath.',
@@ -84,8 +84,8 @@ export const projects: Project[] = [
       pt: 'SaaS jurídico com IA',
     },
     description: {
-      en: 'From nothing to a billable product, built solo: multi-tenant with cross-tenant isolation covered by tests, Stripe subscription billing with usage limits and dunning, AI cost governance with quotas and per-operation ceilings, and data-protection compliance shipped before the first customer.',
-      pt: 'Do zero a um produto faturável, sozinho: multi-tenant com isolamento entre tenants coberto por testes, cobrança por assinatura no Stripe com limites de uso e régua de inadimplência, governança de custo de IA com cotas e tetos por operação, e conformidade com proteção de dados entregue antes do primeiro cliente.',
+      en: 'I built this alone, from nothing to a product that bills customers. It is multi-tenant, and the isolation between tenants is covered by tests. Stripe handles the subscriptions, the usage limits and the dunning, quotas and per-operation ceilings keep the AI cost in check, and the data-protection work was done before the first customer signed up.',
+      pt: 'Construí sozinho, do zero até um produto que fatura. É multi-tenant, e o isolamento entre tenants é coberto por testes. O Stripe cuida das assinaturas, dos limites de uso e da régua de inadimplência; cotas e tetos por operação seguram o custo de IA; e a conformidade com proteção de dados ficou pronta antes de o primeiro cliente entrar.',
     },
     diagramTitle: {
       en: 'Architecture: several tenants share one application behind an isolation boundary covered by tests, with Stripe handling subscription limits and dunning on one side and AI quotas capping cost per operation on the other, PostgreSQL holding per-tenant data, and data-protection compliance underneath.',
